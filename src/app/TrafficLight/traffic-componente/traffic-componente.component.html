@@ -1,0 +1,11 @@
+<div class="row" id="trafficL">
+    <div class="l" [ngClass]="{red: eleccionColors=='red' , off: eleccionColors!= 'red'}" ></div>
+    <div class="l" [ngClass]="{amber: eleccionColors=='amber' , off: eleccionColors!= 'amber'}"></div>
+    <div class="l" [ngClass]="{green: eleccionColors=='green' , off: eleccionColors!= 'green'}"></div>
+</div>
+
+
+<div class="row" id="controllers">
+    <!-- aqui llamos a los OutPut  -->
+    <app-controllers (arraysColors)="getColors($event)" (selecionColors)="getSelectColors($event)"></app-controllers>
+</div>

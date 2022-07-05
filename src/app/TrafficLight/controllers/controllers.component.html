@@ -1,0 +1,20 @@
+
+<div class="row">
+    <div class="bte col">
+        <h3>Controles</h3>
+
+        <select *ngIf="btn === true" [(ngModel)]="colorEleccion" (ngModelChange)="sendColors()" class="desplegable">
+            <option *ngFor="let i of colores"> {{i}} </option>
+        </select>
+
+    </div>
+    <div class="bte col">
+        <button (click)="changeColor()"> Mostrar Control</button>
+        <!-- <button></button> -->
+    
+    </div>
+
+
+</div>
+
+

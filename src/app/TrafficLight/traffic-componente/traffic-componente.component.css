@@ -1,0 +1,53 @@
+#controllers{
+    font-family: sans-serif;
+    padding-top: 30px;
+    float:  initial;
+}
+
+#trafficL{
+    height: 550px;
+    width: 200px;
+    float: left;
+    background-color: #333;
+    border-radius: 40px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+
+.red{
+	background-color: #c0392b;
+    box-shadow: 0 0 10px 1px #c0392b;
+}
+
+.amber{
+	background-color: #f1c40f;
+    box-shadow: 0 0 10px 1px #f1c40f;
+}
+
+.green{
+	background-color: #2ecc71;
+    box-shadow: 0 0 10px 1px #2ecc71;
+}
+
+.l {
+	height: 150px;
+    width: 150px;
+    background-color: rgb(57, 56, 56);
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+
+.l::after{
+	content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%;
+}
+.off{
+    background-color: #111;  
+}
